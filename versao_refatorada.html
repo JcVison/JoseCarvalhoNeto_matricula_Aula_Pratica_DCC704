@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog pessoal de José Carvalho Neto sobre estudos, tecnologia, bobgaem e projetos acadêmicos.">
+    <meta name="author" content="José Carvalho Neto">
+    <title>Blog de José Carvalho Neto | Estudos, Tecnologia e bobagem</title>
+
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #222;
+        }
+        header, main, footer { width: min(100% - 32px, 960px); margin: 0 auto; }
+        body > header { padding: 32px 0 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 16px; flex-wrap: wrap; }
+        nav a { color: #0b57d0; text-decoration: none; }
+        nav a:focus, nav a:hover { text-decoration: underline; }
+        main { background: #fff; padding: 24px; border-radius: 10px; }
+        section { margin-bottom: 32px; }
+        h1, h2 { line-height: 1.2; }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+        }
+        .skip-link:focus {
+            left: 12px;
+            top: 12px;
+            background: #fff;
+            padding: 8px 12px;
+            z-index: 1000;
+        }
+        .card {
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: bold; }
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 10px;
+            font: inherit;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 16px;
+            font: inherit;
+            cursor: pointer;
+        }
+        footer { padding: 24px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header>
+        <h1>Blog de José Carvalho Neto</h1>
+        <p>Estudos, tecnologia, bobagem e experiências acadêmicas.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#interesses">Interesses</a></li>
+                <li><a href="#rotina">Rotina acadêmica</a></li>
+                <li><a href="#contato">Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <article>
+            <header>
+                <h2>Um pouco sobre mim</h2>
+                <p><time datetime="2026-09-01">Publicado em 1 de setembro de 2026</time></p>
+            </header>
+
+            <section id="sobre" aria-labelledby="titulo-sobre">
+                <h2 id="titulo-sobre">Quem sou eu</h2>
+                <p>
+                    Meu nome é José Carvalho Neto. Sou estudante da Universidade Federal de Roraima (UFRR)
+                    e atualmente curso ciencia da computação. 
+            </section>
+
+            <section id="interesses" aria-labelledby="titulo-interesses">
+                <h2 id="titulo-interesses">Meus interesses</h2>
+                <ul>
+                    <li>ratos;</li>
+                    <li>Tecnologia e desenvolvimento web;</li>
+                    <li>Programação e criação de projetos para a faculdade;</li>
+                    <li>Jogos e cultura digital;</li>
+                    <li>Aprendizado sobre perícia criminal.</li>
+                </ul>
+            </section>
+
+            <section id="rotina" aria-labelledby="titulo-rotina">
+                <h2 id="titulo-rotina">Minha rotina acadêmica</h2>
+                <div class="card">
+                    <p>
+                        Minha rotina envolve aulas, atividades da faculdade, estágio e participação em projetos.
+                        Procuro conciliar os estudos com meus interesses em tecnologia e vida social.
+                    </p>
+                </div>
+            </section>
+
+            <section aria-labelledby="titulo-objetivo">
+                <h2 id="titulo-objetivo">Objetivo deste blog</h2>
+                <p>
+                    Este blog foi desenvolvido como atividade acadêmica para aplicar HTML semântico e observar
+                    como mudanças na estrutura da página podem influenciar as métricas de Acessibilidade,
+                    Performance e SEO avaliadas pelo Google Lighthouse.
+                </p>
+            </section>
+        </article>
+
+        <aside aria-labelledby="titulo-curiosidade">
+            <h2 id="titulo-curiosidade">Curiosidade</h2>
+            <p>
+                A utilização de elementos como <code>header</code>, <code>nav</code>, <code>main</code>,
+                <code>article</code>, <code>section</code>, <code>aside</code> e <code>footer</code> ajuda a
+                organizar melhor o conteúdo para navegadores, mecanismos de busca e tecnologias assistivas.
+            </p>
+        </aside>
+
+        <section id="contato" aria-labelledby="titulo-comentarios">
+            <h2 id="titulo-comentarios">Comentários</h2>
+            <form action="#" method="post">
+                <label for="comentario">Deixe um comentário:</label>
+                <textarea id="comentario" name="comentario" required aria-describedby="ajuda-comentario"></textarea>
+                <small id="ajuda-comentario">Escreva uma mensagem sobre o conteúdo do blog.</small>
+                <br>
+                <button type="submit">Enviar comentário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Carvalho Neto. Trabalho acadêmico de Desenvolvimento Web.</p>
+    </footer>
+</body>
+</html>
